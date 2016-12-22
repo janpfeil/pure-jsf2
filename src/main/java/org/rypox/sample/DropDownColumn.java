@@ -12,34 +12,34 @@ import java.util.Map;
  */
 public class DropDownColumn extends ColumnModel {
 
-  private static final long serialVersionUID = 515045195643874409L;
-  private Map<String, String> options;
+	private static final long serialVersionUID = 515045195643874409L;
+	private Map<String, String> options;
 
-  /**
-   * @param header
-   * @param propertyName
-   */
-  public DropDownColumn(String header, String propertyName) {
-    super(header, propertyName);
-    super.setType("DD");
-  }
+	/**
+	 * @param header
+	 * @param propertyName
+	 */
+	public DropDownColumn(String header, String propertyName, boolean readonly) {
+		super(header, propertyName, readonly);
+		super.setType("DD");
+	}
 
-  /**
-   * @param string
-   * @param string2
-   * @param options2
-   */
-  public DropDownColumn(String header, String propertyName, HashMap<String, String> options) {
-    this(header, propertyName);
-    this.options = options;
-  }
+	/**
+	 * @param string
+	 * @param string2
+	 * @param options2
+	 */
+	public DropDownColumn(String header, String propertyName, boolean readonly, HashMap<String, String> options) {
+		this(header, propertyName, readonly);
+		this.options = options;
+	}
 
-  public Map<String, String> getOptions() {
-    return options;
-  }
+	public Map<String, String> getOptions() {
+		return options;
+	}
 
-  public void setOptions(Map<String, String> options) {
-    this.options = options;
-  }
+	public void setOptions(Map<String, String> options) {
+		this.options = options;
+	}
 
 }
