@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+
+<h:head></h:head>
+<body>
+	<h2>form submission changes label</h2>
+	<h:form>
+		<p:autoComplete readonly="true" disabled="false" value="default">
+		</p:autoComplete>
+		
+		<p:selectBooleanButton offLabel="off" onLabel="on" value="true"></p:selectBooleanButton>
+		
+		<p:selectBooleanCheckbox value="true" disabled="true"></p:selectBooleanCheckbox>
+	</h:form>
+
+	<p>
+		<h:outputLink value="table.jsf">task list</h:outputLink>
+	</p>
+</body>
+</html>
