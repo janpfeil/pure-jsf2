@@ -7,7 +7,7 @@
 <h:head></h:head>
 <body>
 	<h2>form submission changes label</h2>
-	<h:form>
+	<h:form id="myform">
 		<h:outputLabel value="#{messageBean.label}">
 			<h:inputText value="#{messageBean.message}" />
 		</h:outputLabel>
@@ -22,7 +22,7 @@
 		<!-- command muss in form tag stehen -->
 		<h:commandLink action="index" value="POST: zurück" />
 	</h:form>
-	<h:outputLink value="index.jsf">GET: zurück</h:outputLink>
+	<h:outputLink value="index.xhtml">GET: zurück</h:outputLink>
 
 	<p>Man beachte die Url in der Adresszeile des Browsers. Sie zeigt
 		immer die Location an, die zuletzt per GET angefordert wurde.</p>
