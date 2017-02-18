@@ -54,17 +54,12 @@
 			<version>5.3</version>
 		</dependency>
 		<dependency>
-			<groupId>coba.sts.public.org.slf4j</groupId>
-			<artifactId>jcl-over-slf4j</artifactId>
-			<version>1.7.13</version>
-		</dependency>
-		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>1.1.7</version>
 		</dependency>
 		<dependency>
-			<groupId>coba.sts.public.org.slf4j</groupId>
+			<groupId>org.slf4j</groupId>
 			<artifactId>jul-to-slf4j</artifactId>
 			<version>1.7.13</version>
 		</dependency>
